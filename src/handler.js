@@ -58,7 +58,7 @@ const getNoteByIdHandler = (request, h) => {
     return response
   } else {
     const response = h.response({
-      status: 'success',
+      status: 'fail',
       message: 'Note not found'
     })
     response.code(404)
@@ -84,7 +84,7 @@ const editNoteByIdHandler = (request, h) => {
 
     const response = h.response({
       status: 'success',
-      message: 'Note changed succesfully'
+      message: 'Note changed successfully'
     })
     response.code(200)
     return response
